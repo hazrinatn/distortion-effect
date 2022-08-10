@@ -1,0 +1,184 @@
+:root {
+    --clr-primary: #D8DBE2;
+    --clr-secondary: #EFDE74;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--clr-primary);
+    width: 100%;
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar > div {
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+.navbar .menu {
+    margin-right: auto;
+}
+
+.navbar .lang {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* SOCIAL MEDIA */
+.media ul {
+    position: absolute;
+    bottom: 250px;
+    left: -140px;
+    transform: rotate(-90deg);
+}
+
+.media ul li {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0 30px;
+
+}
+
+/* TEXT */
+.text {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    transform: rotate(-90deg);
+}
+
+.text h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -10px;
+    margin-bottom: 5px;
+
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    width: 600px;
+}
+
+.text h1 .hidetext {
+    position: absolute; 
+}
+
+
+.text h2 {
+    position: absolute;
+    top: 45px;
+    left: -50px;
+    color: var(--clr-secondary);
+    z-index: -1;
+    font-size: 130px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1;
+
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+}
+
+.text h3 .hidetext {
+    position: absolute;
+}
+
+.text p {
+    width: 250px;
+    font-size: 12px;
+    margin-top: 30px;
+
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+.text p .hidetext {
+    position: absolute;
+}
+
+/* SPONSOR */
+.sponsor {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    text-align: center;
+}
+
+.sponsor img {
+    width: 200px;
+    transform: rotate(-90deg);
+}
+
+.sponsor p {
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: rotate(180deg);
+}
+
+/* DISTORTION */
+.distortion {
+    width: 580px;
+    height: 720px;
+    position: absolute;
+    right: 300px;
+    bottom: 0;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 99;
+}
+
+.first, .second, .third {
+    background: var(--clr-secondary);
+}
+
+.second {
+    left: 33.3%;
+}
+
+.third {
+    left: 33.3%;
+}
